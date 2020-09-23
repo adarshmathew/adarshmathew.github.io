@@ -2,98 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning from Error</title>
-<<<<<<< HEAD
     <link>//adarshmathew.github.io/</link>
-=======
-    <link>https://adarshmathew.github.io/</link>
->>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     <description>Recent content on Learning from Error</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Jan 2020 16:07:24 -0600</lastBuildDate>
     
-<<<<<<< HEAD
 	<atom:link href="//adarshmathew.github.io/index.xml" rel="self" type="application/rss+xml" />
-=======
-	<atom:link href="https://adarshmathew.github.io/index.xml" rel="self" type="application/rss+xml" />
->>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     
     
     <item>
       <title>Demographic Bias in Model Design and Big Tech</title>
-<<<<<<< HEAD
       <link>//adarshmathew.github.io/posts/demo-bias-big-tech/</link>
       <pubDate>Thu, 16 Jan 2020 16:07:24 -0600</pubDate>
       
       <guid>//adarshmathew.github.io/posts/demo-bias-big-tech/</guid>
       <description>In today&amp;rsquo;s weekly CSS Workshop, we had a duo from AirBnB presenting work on &amp;lsquo;Designing for Trust&amp;rsquo; in the context of the sharing economy.</description>
-=======
-      <link>https://adarshmathew.github.io/posts/demo-bias-big-tech/</link>
-      <pubDate>Thu, 16 Jan 2020 16:07:24 -0600</pubDate>
-      
-      <guid>https://adarshmathew.github.io/posts/demo-bias-big-tech/</guid>
-      <description>In today&amp;rsquo;s weekly CSS Workshop, we had a duo from AirBnB presenting work on &amp;lsquo;Designing for Trust&amp;rsquo; in the context of the sharing economy. The paper had an interesting design &amp;ndash; they set up an investment game to construct their dependent variable of &amp;lsquo;Trust&amp;rsquo;, and used the participants&amp;rsquo; &amp;lsquo;behavioural&amp;rsquo; data logs to identify what behaviours predicted propensity to trust among users. They had a particularly interesting &amp;lsquo;data triangulation&amp;rsquo; step, where they measured the validity of their trust construct using good ol&amp;rsquo; survey data, all to see if their construct was capturing the right indicators of trust in a completely different context.</description>
->>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     </item>
     
     <item>
       <title>My First Post</title>
-<<<<<<< HEAD
       <link>//adarshmathew.github.io/posts/my-first-post/</link>
       <pubDate>Sun, 22 Sep 2019 01:05:39 -0500</pubDate>
       
       <guid>//adarshmathew.github.io/posts/my-first-post/</guid>
-=======
-      <link>https://adarshmathew.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 22 Sep 2019 01:05:39 -0500</pubDate>
-      
-      <guid>https://adarshmathew.github.io/posts/my-first-post/</guid>
->>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
       <description>Testing what this looks like.
 Ideally, I&amp;rsquo;d be able to do a whole new layout for the about page. Let&amp;rsquo;s see.</description>
     </item>
     
     <item>
       <title></title>
-<<<<<<< HEAD
       <link>//adarshmathew.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//adarshmathew.github.io/about/</guid>
       <description>Adarsh Mathew Hi! I&amp;rsquo;m currently a graduate student in the Masters in Computational Social Science program at the University of Chicago.</description>
-=======
-      <link>https://adarshmathew.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://adarshmathew.github.io/about/</guid>
-      <description>Adarsh Mathew Hi! I&amp;rsquo;m currently a graduate student in the Masters in Computational Social Science program at the University of Chicago. I&amp;rsquo;ve also been working with Prof. James Evans at the Knowledge Lab since Summer 2020.
-My Masters thesis (a work-in-progress) tries to explore the narrative and dissemination network of claims in the QAnon universe using a computational framework. I hope to describe and investigate how these claims propagate in user networks on Reddit &amp;amp; Twitter, what counts as &amp;lsquo;knowledge&amp;rsquo; in these communities, and how they adapt in a decentralized fashion in response to platform incentives.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://adarshmathew.github.io/posts/kp_syllabus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://adarshmathew.github.io/posts/kp_syllabus/</guid>
-      <description>Syllabus &amp;ndash; Knowledge &amp;amp; Politics Hi everyone,
-Please see the draft syllabus for Knowledge and Politics, below. This course is primarily aimed at graduate students but is open to a limited number of advanced undergraduates as well. If you are an undergraduate interested in enrolling in the course, please send me an email.
-PLSC 42502: Knowledge and Politics: Winter 2020 Tuesdays 9:30-12:20, Foster 105
-Instructor: Matthew Landauer (landauer@uchicago.edu)
-DRAFT SYLLABUS: READINGS AND ASSIGNMENTS SUBJECT TO CHANGE</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://adarshmathew.github.io/posts/w1_kp_notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://adarshmathew.github.io/posts/w1_kp_notes/</guid>
-      <description>Goldman paper Individual Epistemology: (traditional) Mental ps of cognitive agents in isolation or abstraction from other persons.
-Social Epistemology: Social paths to knowledge; many routes to belief that feature interactions with other agents
-Veritistic Epistemology: Prod of knowledge (true belief), error (false belief), ignorance (absence of true belief)
- Main question for veritistic epistemology is: Which practices have a comparatively favorable impact on knowledge as contrasted with error and ignorance?</description>
->>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     </item>
     
   </channel>
