@@ -3,32 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
     <loc>//adarshmathew.github.io/posts/demo-bias-big-tech/</loc>
+=======
+    <loc>https://adarshmathew.github.io/posts/demo-bias-big-tech/</loc>
+>>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     <lastmod>2020-01-16T16:07:24-06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>//adarshmathew.github.io/</loc>
+=======
+    <loc>https://adarshmathew.github.io/</loc>
+>>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     <lastmod>2020-01-16T16:07:24-06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>//adarshmathew.github.io/posts/</loc>
+=======
+    <loc>https://adarshmathew.github.io/posts/</loc>
+>>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     <lastmod>2020-01-16T16:07:24-06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>//adarshmathew.github.io/posts/my-first-post/</loc>
+=======
+    <loc>https://adarshmathew.github.io/posts/my-first-post/</loc>
+>>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     <lastmod>2019-09-22T01:05:39-05:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>//adarshmathew.github.io/about/</loc>
+=======
+    <loc>https://adarshmathew.github.io/about/</loc>
+>>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
     <priority>0</priority>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>//adarshmathew.github.io/tags/</loc>
+=======
+    <loc>https://adarshmathew.github.io/posts/kp_syllabus/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://adarshmathew.github.io/posts/w1_kp_notes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://adarshmathew.github.io/tags/</loc>
+>>>>>>> dc94d3680158c102ee0604573a134a2c9f656df2
   </url>
   
 </urlset>
