@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning from Error</title>
@@ -6,26 +6,50 @@
     <description>Recent content on Learning from Error</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jan 2020 16:07:24 -0600</lastBuildDate>
+    <lastBuildDate>Sat, 20 Feb 2021 14:20:25 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now Reading: 14 February, 2021</title>
+      <link>https://adarshmathew.github.io/current/2021-2feb-14/</link>
+      <pubDate>Sat, 20 Feb 2021 14:20:25 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/current/2021-2feb-14/</guid>
+      <description>Books Non-fiction Honestly, I don&amp;rsquo;t have the appetite for non-fiction at this time of the quarter. But if I do come across one, it&amp;rsquo;ll make its way here.</description>
+    </item>
     
-	<atom:link href="https://adarshmathew.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now Reading: 15 November, 2020</title>
+      <link>https://adarshmathew.github.io/current/2020-11november-15/</link>
+      <pubDate>Sat, 14 Nov 2020 11:20:00 -0400</pubDate>
+      
+      <guid>https://adarshmathew.github.io/current/2020-11november-15/</guid>
+      <description>Books Non-fiction  Race After Technology, by Ruha Benjamin  Part of the week&amp;rsquo;s readings in the &amp;lsquo;Technologies of Race-Making&amp;rsquo; seminar.</description>
+    </item>
     
+    <item>
+      <title>Now Reading: 8 November, 2020</title>
+      <link>https://adarshmathew.github.io/current/2020-11nov-8/</link>
+      <pubDate>Sun, 08 Nov 2020 14:56:40 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/current/2020-11nov-8/</guid>
+      <description>Insert Lead paragraph here.
+Books Non-fiction  Algorithms of Oppression, by Safiya Noble  Discussing this book in class sent me on a tizzy.</description>
+    </item>
     
     <item>
       <title>Demographic Bias in Model Design and Big Tech</title>
-      <link>https://adarshmathew.github.io/posts/demo-bias-big-tech/</link>
+      <link>https://adarshmathew.github.io/binned/demo-bias-big-tech/</link>
       <pubDate>Thu, 16 Jan 2020 16:07:24 -0600</pubDate>
       
-      <guid>https://adarshmathew.github.io/posts/demo-bias-big-tech/</guid>
+      <guid>https://adarshmathew.github.io/binned/demo-bias-big-tech/</guid>
       <description>In today&amp;rsquo;s weekly CSS Workshop, we had a duo from AirBnB presenting work on &amp;lsquo;Designing for Trust&amp;rsquo; in the context of the sharing economy.</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://adarshmathew.github.io/posts/my-first-post/</link>
+      <link>https://adarshmathew.github.io/binned/my-first-post/</link>
       <pubDate>Sun, 22 Sep 2019 01:05:39 -0500</pubDate>
       
-      <guid>https://adarshmathew.github.io/posts/my-first-post/</guid>
+      <guid>https://adarshmathew.github.io/binned/my-first-post/</guid>
       <description>Testing what this looks like.
 Ideally, I&amp;rsquo;d be able to do a whole new layout for the about page. Let&amp;rsquo;s see.</description>
     </item>
@@ -36,7 +60,7 @@ Ideally, I&amp;rsquo;d be able to do a whole new layout for the about page. Let&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://adarshmathew.github.io/about/</guid>
-      <description>Adarsh Mathew Hi! I&amp;rsquo;m currently a graduate student in the Masters in Computational Social Science program at the University of Chicago.</description>
+      <description>About: Adarsh Mathew Hi! I&amp;rsquo;m currently a graduate student in the Masters in Computational Social Science program at the University of Chicago.</description>
     </item>
     
   </channel>
