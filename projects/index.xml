@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Learning from Error</title>
+    <link>https://adarshmathew.github.io/projects/</link>
+    <description>Recent content in Projects on Learning from Error</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Feb 2021 14:44:42 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Persuasion</title>
+      <link>https://adarshmathew.github.io/projects/persuasion/</link>
+      <pubDate>Sat, 20 Feb 2021 14:44:42 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/projects/persuasion/</guid>
+      <description>Insert Project Description here.
+Links to work Intro Methods Findings  References </description>
+    </item>
+    
+    <item>
+      <title>Web of Truth</title>
+      <link>https://adarshmathew.github.io/projects/weboftruth/</link>
+      <pubDate>Wed, 23 Sep 2020 16:41:37 -0400</pubDate>
+      
+      <guid>https://adarshmathew.github.io/projects/weboftruth/</guid>
+      <description>Insert Project Description here.
+Links to work Intro Methods Findings  References </description>
+    </item>
+    
+  </channel>
+</rss>
