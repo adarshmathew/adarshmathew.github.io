@@ -8,21 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Nov 2020 18:36:44 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/tags/musings/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Research Gatekeeping Academia</title>
+      <title>Research Gatekeeping &amp; Academia</title>
       <link>https://adarshmathew.github.io/posts/research-gatekeeping-academia/</link>
       <pubDate>Wed, 25 Nov 2020 18:36:44 -0500</pubDate>
       
       <guid>https://adarshmathew.github.io/posts/research-gatekeeping-academia/</guid>
-      <description>[This post stems from a big personal grouse of mine, and this twitter thread [https://twitter.com/ztopiapub/status/1331741319975165953] captures that perfectly. I didn&amp;rsquo;t want to reply on there because a) complex conversations on Twitter sucks, and b) this wasn&amp;rsquo;t my conversation to butt into.</description>
+      <description>This post stems from a big personal grouse of mine, and this twitter thread captures that perfectly. I didn&amp;rsquo;t want to reply on there because a) complex conversations on Twitter sucks, and b) this wasn&amp;rsquo;t my conversation to butt into.</description>
     </item>
     
     <item>
-      <title>The difficulty of graduate school during a global pandemic</title>
+      <title>Pandemic &amp; Grad-School</title>
       <link>https://adarshmathew.github.io/posts/pandemic-grad-school/</link>
       <pubDate>Wed, 23 Sep 2020 22:15:20 -0400</pubDate>
       
       <guid>https://adarshmathew.github.io/posts/pandemic-grad-school/</guid>
       <description>Spending time with pip has given me a more close-up window of insight into her life in graduate school. I&amp;rsquo;ve wondered how she and her students deal with coursework and research that deal with truly horrifying topics &amp;ndash; sexual violence, genocide, structural patriarchy.</description>
+    </item>
+    
+    <item>
+      <title>Demographic Bias in Model Design and Big Tech</title>
+      <link>https://adarshmathew.github.io/posts/demo-bias-big-tech/</link>
+      <pubDate>Thu, 16 Jan 2020 16:07:24 -0600</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/demo-bias-big-tech/</guid>
+      <description>In today&amp;rsquo;s weekly CSS Workshop, we had a duo from AirBnB presenting work on &amp;lsquo;Designing for Trust&amp;rsquo; in the context of the sharing economy.</description>
     </item>
     
   </channel>

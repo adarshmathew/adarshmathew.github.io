@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Learning from Error</title>
+    <title>Select Projects &amp; Updates on Learning from Error</title>
     <link>https://adarshmathew.github.io/projects/</link>
-    <description>Recent content in Projects on Learning from Error</description>
+    <description>Recent content in Select Projects &amp; Updates on Learning from Error</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Feb 2021 14:44:42 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Persuasion</title>
-      <link>https://adarshmathew.github.io/projects/persuasion/</link>
-      <pubDate>Sat, 20 Feb 2021 14:44:42 -0500</pubDate>
-      
-      <guid>https://adarshmathew.github.io/projects/persuasion/</guid>
-      <description>Insert Project Description here.
-Links to work Intro Methods Findings  References </description>
-    </item>
-    
+    <lastBuildDate>Wed, 23 Sep 2020 16:41:37 -0400</lastBuildDate><atom:link href="https://adarshmathew.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web of Truth</title>
       <link>https://adarshmathew.github.io/projects/weboftruth/</link>
       <pubDate>Wed, 23 Sep 2020 16:41:37 -0400</pubDate>
       
       <guid>https://adarshmathew.github.io/projects/weboftruth/</guid>
-      <description>Insert Project Description here.
-Links to work Intro Methods Findings  References </description>
+      <description>Reportage can be boiled down to an abstract representation of entities (person, place, organization, ideology, it&amp;rsquo;s quite broad) and relationships (could be an action, could be a dependence, it&amp;rsquo;s very vague, honestly).</description>
+    </item>
+    
+    <item>
+      <title>Ideolect</title>
+      <link>https://adarshmathew.github.io/projects/ideolect/</link>
+      <pubDate>Mon, 06 Jul 2020 11:55:56 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/projects/ideolect/</guid>
+      <description>Ideolect, coined by my collaborator on this project Jeremiah Milbauer, is a play on ideology and idiolect, the speech habits peculiar to a particular person.</description>
     </item>
     
   </channel>

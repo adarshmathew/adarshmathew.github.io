@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>half-baked on Learning from Error</title>
+    <link>https://adarshmathew.github.io/tags/half-baked/</link>
+    <description>Recent content in half-baked on Learning from Error</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jan 2020 16:07:24 -0600</lastBuildDate><atom:link href="https://adarshmathew.github.io/tags/half-baked/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demographic Bias in Model Design and Big Tech</title>
+      <link>https://adarshmathew.github.io/posts/demo-bias-big-tech/</link>
+      <pubDate>Thu, 16 Jan 2020 16:07:24 -0600</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/demo-bias-big-tech/</guid>
+      <description>In today&amp;rsquo;s weekly CSS Workshop, we had a duo from AirBnB presenting work on &amp;lsquo;Designing for Trust&amp;rsquo; in the context of the sharing economy.</description>
+    </item>
+    
+  </channel>
+</rss>

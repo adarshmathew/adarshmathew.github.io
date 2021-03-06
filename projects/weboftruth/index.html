@@ -4,16 +4,14 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Web of Truth - Learning from Error</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Web of Truth" />
-<meta property="og:description" content="Insert Project Description here.
-Links to work Intro Methods Findings  References " />
+<meta property="og:description" content="Fact-checking as a Combinatorial Task." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://adarshmathew.github.io/projects/weboftruth/" />
 <meta property="article:published_time" content="2020-09-23T16:41:37-04:00" />
 <meta property="article:modified_time" content="2020-09-23T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Web of Truth"/>
-<meta name="twitter:description" content="Insert Project Description here.
-Links to work Intro Methods Findings  References "/>
+<meta name="twitter:description" content="Fact-checking as a Combinatorial Task."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/normalize.css" />
@@ -73,19 +71,17 @@ Links to work Intro Methods Findings  References "/>
 
 		<div class="post-header">
 			<h1 class="title">Web of Truth</h1>
-			<div class="meta">Posted at &mdash; Sep 23, 2020 <span class="draft-label">DRAFT</span> </div>
 			
 			
+			<div class="meta">Last Modified at &mdash; Sep 23, 2020</div>
 		</div>
 
 		<div class="markdown">
-			<p><strong>Insert Project Description here.</strong></p>
-<h2 id="links-to-work">Links to work</h2>
-<h2 id="intro">Intro</h2>
-<h2 id="methods">Methods</h2>
-<h2 id="findings">Findings</h2>
-<hr>
-<h2 id="references">References</h2>
+			<p>Reportage can be boiled down to an abstract representation of entities (person, place, organization, ideology, it&rsquo;s quite broad) and relationships (could be an action, could be a dependence, it&rsquo;s very vague, honestly). As such, the purely linguistic generation of misinformation is a combinatorial exercise; it&rsquo;s an incorrect (maybe not falsifiable) representation of entities and the relationships between them. And what makes one piece of misinformation more plausible than another is that the combination or sequence of entites &amp; relationships in one is closer in some abstract (networked) space to a pre-existing combination, i.e. fact. We (Aabir &amp; I) argue that this piece of news <em>feels</em> plausible because something similar has happened, and you <em>wouldn&rsquo;t be surprised</em> if it had actually happened.</p>
+<p>This brings us to a host of fascinating epistemic questions, on mental models and our expectations of reality and even how the scientific enterprise works. In fact, Prof. James Evans has some work which explores how much of scientific discovery is the result of combinatorial tinkering. He and others call it the exploration-exploitation trade-off; <em>local</em> combinatorial tinkering is exploiting a set of <em>known</em> relationships, while exploration is the ostensibly <em>global</em> search of potential, unrelated, unknown relationships.</p>
+<p>Being the wannabe ML nerds that we are, we try to boil down this into a feasible ML problem. The enity-relationship structure we refer to is called a knowledge graph representation, and there has been a ton of work in trying to build graph neural network models that try to model this structure for a given KG base. But all of them center around a limited space of tuples, like subject-verb-object triples or entity links from the Wikipedia Knowledge Base. We want to extend it to a live knowledge corpus like News or all of Wikipedia, but we quickly realized that was, well, too much. That there are full teams at Stanford and other places trying to do just the creation of the knowledge base. Semantic Role Extraction &amp; Labelling is still an unsolved task in NLU.</p>
+<p>So, we settled for proving out our hypothesis with a relatively simple question: Given a subject and an object, do pre-trained GLOVe word embeddings do a better job of predicting the relationship or does a learned KGE model?</p>
+<p>Aabir and I went back-and-forth a lot on whether our evaluation criteria was fair or not. But, for a quarter-long course, I think we at least proved something out. We plan to continue working on this. Even if the epistemic questions will distract me more than the model itself.</p>
 
 		</div>
 

@@ -8,7 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Feb 2021 14:20:25 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Now Reading: 14 February, 2021</title>
+      <title>About: Adarsh Mathew</title>
+      <link>https://adarshmathew.github.io/about/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://adarshmathew.github.io/about/</guid>
+      <description>Hi! I&amp;rsquo;m currently a graduate student in the Masters in Computational Social Science program at the University of Chicago. I&amp;rsquo;ve also been working with Prof.</description>
+    </item>
+    
+    <item>
+      <title>14 Feb, 2021</title>
       <link>https://adarshmathew.github.io/current/2021-2feb-14/</link>
       <pubDate>Sat, 20 Feb 2021 14:20:25 -0500</pubDate>
       
@@ -17,16 +26,16 @@
     </item>
     
     <item>
-      <title>Research Gatekeeping Academia</title>
+      <title>Research Gatekeeping &amp; Academia</title>
       <link>https://adarshmathew.github.io/posts/research-gatekeeping-academia/</link>
       <pubDate>Wed, 25 Nov 2020 18:36:44 -0500</pubDate>
       
       <guid>https://adarshmathew.github.io/posts/research-gatekeeping-academia/</guid>
-      <description>[This post stems from a big personal grouse of mine, and this twitter thread [https://twitter.com/ztopiapub/status/1331741319975165953] captures that perfectly. I didn&amp;rsquo;t want to reply on there because a) complex conversations on Twitter sucks, and b) this wasn&amp;rsquo;t my conversation to butt into.</description>
+      <description>This post stems from a big personal grouse of mine, and this twitter thread captures that perfectly. I didn&amp;rsquo;t want to reply on there because a) complex conversations on Twitter sucks, and b) this wasn&amp;rsquo;t my conversation to butt into.</description>
     </item>
     
     <item>
-      <title>Now Reading: 15 November, 2020</title>
+      <title>15 Nov, 2020</title>
       <link>https://adarshmathew.github.io/current/2020-11november-15/</link>
       <pubDate>Sat, 14 Nov 2020 11:20:00 -0400</pubDate>
       
@@ -35,7 +44,7 @@
     </item>
     
     <item>
-      <title>Now Reading: 8 November, 2020</title>
+      <title>8 Nov, 2020</title>
       <link>https://adarshmathew.github.io/current/2020-11nov-8/</link>
       <pubDate>Sun, 08 Nov 2020 14:56:40 -0500</pubDate>
       
@@ -45,7 +54,7 @@ Books Non-fiction  Algorithms of Oppression, by Safiya Noble  Discussing this bo
     </item>
     
     <item>
-      <title>The difficulty of graduate school during a global pandemic</title>
+      <title>Pandemic &amp; Grad-School</title>
       <link>https://adarshmathew.github.io/posts/pandemic-grad-school/</link>
       <pubDate>Wed, 23 Sep 2020 22:15:20 -0400</pubDate>
       
@@ -54,11 +63,29 @@ Books Non-fiction  Algorithms of Oppression, by Safiya Noble  Discussing this bo
     </item>
     
     <item>
+      <title>Web of Truth</title>
+      <link>https://adarshmathew.github.io/projects/weboftruth/</link>
+      <pubDate>Wed, 23 Sep 2020 16:41:37 -0400</pubDate>
+      
+      <guid>https://adarshmathew.github.io/projects/weboftruth/</guid>
+      <description>Reportage can be boiled down to an abstract representation of entities (person, place, organization, ideology, it&amp;rsquo;s quite broad) and relationships (could be an action, could be a dependence, it&amp;rsquo;s very vague, honestly).</description>
+    </item>
+    
+    <item>
+      <title>Ideolect</title>
+      <link>https://adarshmathew.github.io/projects/ideolect/</link>
+      <pubDate>Mon, 06 Jul 2020 11:55:56 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/projects/ideolect/</guid>
+      <description>Ideolect, coined by my collaborator on this project Jeremiah Milbauer, is a play on ideology and idiolect, the speech habits peculiar to a particular person.</description>
+    </item>
+    
+    <item>
       <title>Demographic Bias in Model Design and Big Tech</title>
-      <link>https://adarshmathew.github.io/binned/demo-bias-big-tech/</link>
+      <link>https://adarshmathew.github.io/posts/demo-bias-big-tech/</link>
       <pubDate>Thu, 16 Jan 2020 16:07:24 -0600</pubDate>
       
-      <guid>https://adarshmathew.github.io/binned/demo-bias-big-tech/</guid>
+      <guid>https://adarshmathew.github.io/posts/demo-bias-big-tech/</guid>
       <description>In today&amp;rsquo;s weekly CSS Workshop, we had a duo from AirBnB presenting work on &amp;lsquo;Designing for Trust&amp;rsquo; in the context of the sharing economy.</description>
     </item>
     
@@ -70,15 +97,6 @@ Books Non-fiction  Algorithms of Oppression, by Safiya Noble  Discussing this bo
       <guid>https://adarshmathew.github.io/binned/my-first-post/</guid>
       <description>Testing what this looks like.
 Ideally, I&amp;rsquo;d be able to do a whole new layout for the about page. Let&amp;rsquo;s see.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://adarshmathew.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://adarshmathew.github.io/about/</guid>
-      <description>About: Adarsh Mathew Hi! I&amp;rsquo;m currently a graduate student in the Masters in Computational Social Science program at the University of Chicago.</description>
     </item>
     
   </channel>
