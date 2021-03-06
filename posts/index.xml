@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Learning from Error</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2020 18:36:44 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Mar 2021 17:59:09 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualizing Reddit circa 2017</title>
+      <link>https://adarshmathew.github.io/posts/umap_reddit/</link>
+      <pubDate>Sat, 06 Mar 2021 17:59:09 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/umap_reddit/</guid>
+      <description>I was tinkering around with UMAP and the adjacency matrix of user overlap between subreddits because I wanted a nice visualization.</description>
+    </item>
+    
     <item>
       <title>Research Gatekeeping &amp; Academia</title>
       <link>https://adarshmathew.github.io/posts/research-gatekeeping-academia/</link>
