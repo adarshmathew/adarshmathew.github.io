@@ -26,6 +26,30 @@
 	<script src="https://adarshmathew.github.io/js/abc.js"></script>
 	<script src="https://adarshmathew.github.io/js/xyz.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -79,6 +103,16 @@
 
 		<div class="markdown">
 			<p>I was tinkering around with UMAP and the adjacency matrix of user overlap between subreddits because I wanted a nice visualization. Maybe shouldn&rsquo;t have spent so much time on this, but look a pretty graph!</p>
+<p>The input data is an adjacency matrix of the user overlap between any two of the top ~5000 subreddits in 2017. The dimensions in the plot were derived using UMAP, the &lsquo;clusters&rsquo; using DBSCAN. I haven&rsquo;t tinkered with the parameters (yet).</p>
+<p>The numeric pairs when you hover over a point:</p>
+<ol>
+<li>
+<p>Subreddit size, or the number of unique commenters on that subreddit for the year.</p>
+</li>
+<li>
+<p>A scaling factor for the radius of the circle, given by:   $\frac{log_{10}{size}}{100}$</p>
+</li>
+</ol>
 
 
 
@@ -170,6 +204,7 @@
 </html>
 
 
+
 		</div>
 
 		<div class="post-tags">
@@ -205,4 +240,5 @@
 
 <script>feather.replace()</script>
 </body>
+
 </html>
