@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pretty-data on Learning from Error</title>
+    <link>https://adarshmathew.github.io/tags/pretty-data/</link>
+    <description>Recent content in pretty-data on Learning from Error</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Mar 2021 17:59:09 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/tags/pretty-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualizing Reddit circa 2017</title>
+      <link>https://adarshmathew.github.io/posts/umap_reddit/</link>
+      <pubDate>Sat, 06 Mar 2021 17:59:09 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/umap_reddit/</guid>
+      <description>I was tinkering around with UMAP and the adjacency matrix of user overlap between subreddits because I wanted a nice visualization.</description>
+    </item>
+    
+  </channel>
+</rss>

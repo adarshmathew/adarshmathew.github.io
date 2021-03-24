@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>thesis-logs on Learning from Error</title>
+    <link>https://adarshmathew.github.io/tags/thesis-logs/</link>
+    <description>Recent content in thesis-logs on Learning from Error</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Mar 2021 15:50:38 -0400</lastBuildDate><atom:link href="https://adarshmathew.github.io/tags/thesis-logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experience gets you to appreciate the Fundamentals</title>
+      <link>https://adarshmathew.github.io/posts/experience_and_fundamental_cs/</link>
+      <pubDate>Wed, 24 Mar 2021 15:50:38 -0400</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/experience_and_fundamental_cs/</guid>
+      <description>I&amp;rsquo;m writing this as I wait to be assigned to an RCC compute node for my thesis work. It took me the better part of a day, but I think I know how to solve my large-scale entropy calculation conundrum.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Reddit circa 2017</title>
+      <link>https://adarshmathew.github.io/posts/umap_reddit/</link>
+      <pubDate>Sat, 06 Mar 2021 17:59:09 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/umap_reddit/</guid>
+      <description>I was tinkering around with UMAP and the adjacency matrix of user overlap between subreddits because I wanted a nice visualization.</description>
+    </item>
+    
+  </channel>
+</rss>

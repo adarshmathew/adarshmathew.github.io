@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Experience gets you to appreciate the Fundamentals - Learning from Error</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Experience gets you to appreciate the Fundamentals" />
+<meta property="og:description" content="Invoking Tim Duncan in a CS lament" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adarshmathew.github.io/posts/experience_and_fundamental_cs/" />
+<meta property="article:published_time" content="2021-03-24T15:50:38-04:00" />
+<meta property="article:modified_time" content="2021-03-24T15:50:38-04:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Experience gets you to appreciate the Fundamentals"/>
+<meta name="twitter:description" content="Invoking Tim Duncan in a CS lament"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://adarshmathew.github.io/js/main.js"></script>
+	<script src="https://adarshmathew.github.io/js/abc.js"></script>
+	<script src="https://adarshmathew.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://adarshmathew.github.io/">
+	<h1 class="site-title"><a href="https://adarshmathew.github.io/">Learning from Error</a></h1>
+	<div class="site-description"><h2>An old-school blog by <a href="/about">Adarsh Mathew</a></h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/adarshmathew" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/adarshmathew92" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/adarsh-mathew" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/current">Now Reading</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About Me</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Experience gets you to appreciate the Fundamentals</h1>
+			
+			
+			<div class="meta">Last Modified at &mdash; Mar 24, 2021</div>
+		</div>
+
+		<div class="markdown">
+			<p>I&rsquo;m writing this as I wait to be assigned to an RCC compute node for my thesis work. It took me the better part of a day, but I think I know how to solve my large-scale entropy calculation conundrum. And yes, the answer is sparse matrices. Yet again.</p>
+<p>But this post isn&rsquo;t about that extolling the virtues of sparse matrices. The rough idea got me thinking back on how much of my work in the last year vis-a-vis efficiency boiled down to the use of smart datastructures. With my dataset, these gains were critical. This got me thinking about my formal CS education, or the lack of it.</p>
+<p>My intro to CS was the standard first-year Intro to Programming at KGP. I don&rsquo;t remember much of it, other than the fact that it was taught in C (which I&rsquo;ve completely forgotten), and that students with some past experience with programming (at the CBSE or ICSE level) did comfortably better than me. And that&rsquo;s a shame, because I sure could use those fundamental concepts right now.</p>
+<p>I had no idea when I&rsquo;d use a linked-list or a hash table in my first year, and I never paid any attention to it. I only picked up programming again much later, first with statistical computing. As I&rsquo;ve drifted to data science over the last few years, I&rsquo;ve had to re-learn and re-discover these concepts the hard way: estimaing computational complexity, the bane of easy to implement but inefficient data structures, the allure of parallelization, and crafting optimal queries.</p>
+<p>This is when I realized that it&rsquo;s only with experience that you truly appreciate the importance and beauty of fundamentals. Sure, in an abstract sense, the logical cleanliness of these structures should have appealed to me. But that didn&rsquo;t work for me, and I had to learn this the hard way. Which makes me wonder: How many iterations of styles did Tim Duncan go through before he decided to live and die by the fundamentals? Or was he convinced by the simplicity and efficacy of those concepts without ever having tried showboating?</p>
+<p>Maybe I should take an algorithms and data structures course finally, right?</p>
+<p>Anyway, my compute node beckons me now.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/musings">musings</a></li>
+								
+								<li><a href="/tags/grad-school">grad-school</a></li>
+								
+								<li><a href="/tags/thesis-logs">thesis-logs</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'adarshmathew';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+
+</html>
