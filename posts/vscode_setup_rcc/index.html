@@ -104,6 +104,7 @@
 		<div class="markdown">
 			<p>I&rsquo;m writing this as I debug and iterate over some code, and shitposting on the group about the religion of VS Code. At Regina&rsquo;s suggestion, I decided to catalogue what my set up looks like, especially to work on the RCC midway cluster. I&rsquo;ll keep adding to this document as I learn new quirks about the UChicago RCC system.</p>
 <p>I have become extremely reliant on VS Code for my programming needs. So much so that I had 12 hours of zero productivity before a deadline when I thought I was having VSCode-related issues<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It&rsquo;s neat and has excellent extensions, allows me to dive in and out of GUI and CLI mode when writing Python code, and lets me do multiple things in the same window: writing Markdown files for my blog, running Noetbooks without opening a browser tab, compiling LaTeX files, and even testing SQL queries. So I thought I&rsquo;d note down what my setup to access the RCC cluster looks like.</p>
+<h2 id="setting-up-vs-code-for-remote-development">Setting up VS Code for Remote Development</h2>
 <p><strong>Step 1</strong>: Install VS Code on your local machine.</p>
 <p>**Step 2*8: Since the prime objective here is to enable remote development on a server, install the &lsquo;Remote - SSH&rsquo; and &lsquo;Remote Development&rsquo; extensions.</p>
 <p><strong>Step 3</strong>: Set up your ssh credentials to log into RCC<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> with VS Code. Follow the instructions <a href="https://code.visualstudio.com/docs/remote/ssh">here</a>. You just need to complete the &lsquo;Getting Started&rsquo; section. The broad steps are: set up an SSH key-id pair, add your RCC credentials, and connect.</p>
@@ -117,6 +118,49 @@
 <li>Remote dev: Remote - Containers, Remote - WSL (if on windows), Remote X11</li>
 <li>DB extensions: SQLTools</li>
 </ul>
+<h2 id="running-notebooks-without-the-hassle-of-a-vpn">Running Notebooks without the hassle of a VPN</h2>
+<p>Figuring this out was the thing that made me a full VSCode convert. It&rsquo;s pretty nifty, even if the downside is you don&rsquo;t get checkpoint files.</p>
+<p>For this section, I&rsquo;m assuming you&rsquo;ve been able to log into RCC using the steps above.</p>
+<p><strong>Step 1</strong>: Requisition a compute node.</p>
+<div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sinteractive -p broadwl --mem<span style="color:#719e07">=</span>16G --time<span style="color:#719e07">=</span>2:00:00</code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Step 2</strong>: Load the Anaconda module or your custom env</p>
+<div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load python</code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Step 3</strong>: Get your hostname for the compute node. Copy the address.</p>
+<div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hostname -I</code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Step 4</strong>: Launch your Jupyter kernel. Use the address from the previous step for your ip address. Copy the address of the Jupyter kernel created.</p>
+<div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ jupyter-notebook --no-browser --ip<span style="color:#719e07">=</span>xxx.xxx.xxx</code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Step 5</strong>: Either open an existing notebook in VS Code using the navigation bar on the side, or create a blank notebook.</p>
+<p><strong>Step 6</strong>: At the top right corner, click on &lsquo;Jupyter Server&rsquo;. You should get a drop down asking if you want the default kernel or an existing one. Select existing, and  paste the address of the Jupyter kernel from the previous step. You&rsquo;ll get a prompt to reload, which should be painless.</p>
+<p><strong>Step 7</strong>: Done.</p>
+<hr>
 <p><em>Next: Getting it to run R via the notebook on the cluster.</em></p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
