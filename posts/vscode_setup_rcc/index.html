@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>A Guide for VSCode &amp; RCC Harmony - Learning from Error</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="A Guide for VSCode &amp; RCC Harmony" />
+<meta property="og:description" content="Or: How I Learned to Stop Worrying about VPNs and Love SLURM." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adarshmathew.github.io/posts/vscode_setup_rcc/" />
+<meta property="article:published_time" content="2021-04-08T16:51:57-04:00" />
+<meta property="article:modified_time" content="2021-04-08T16:51:57-04:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Guide for VSCode &amp; RCC Harmony"/>
+<meta name="twitter:description" content="Or: How I Learned to Stop Worrying about VPNs and Love SLURM."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://adarshmathew.github.io/js/main.js"></script>
+	<script src="https://adarshmathew.github.io/js/abc.js"></script>
+	<script src="https://adarshmathew.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://adarshmathew.github.io/">
+	<h1 class="site-title"><a href="https://adarshmathew.github.io/">Learning from Error</a></h1>
+	<div class="site-description"><h2>An old-school blog by <a href="/about">Adarsh Mathew</a></h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/adarshmathew" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/adarshmathew92" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/adarsh-mathew" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/current">Now Reading</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About Me</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">A Guide for VSCode &amp; RCC Harmony</h1>
+			
+			
+			<div class="meta">Last Modified at &mdash; Apr 8, 2021</div>
+		</div>
+
+		<div class="markdown">
+			<p>I&rsquo;m writing this as I debug and iterate over some code, and shitposting on the group about the religion of VS Code. At Regina&rsquo;s suggestion, I decided to catalogue what my set up looks like, especially to work on the RCC midway cluster. I&rsquo;ll keep adding to this document as I learn new quirks about the UChicago RCC system.</p>
+<p>I have become extremely reliant on VS Code for my programming needs. So much so that I had 12 hours of zero productivity before a deadline when I thought I was having VSCode-related issues<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It&rsquo;s neat and has excellent extensions, allows me to dive in and out of GUI and CLI mode when writing Python code, and lets me do multiple things in the same window: writing Markdown files for my blog, running Noetbooks without opening a browser tab, compiling LaTeX files, and even testing SQL queries. So I thought I&rsquo;d note down what my setup to access the RCC cluster looks like.</p>
+<p><strong>Step 1</strong>: Install VS Code on your local machine.</p>
+<p>**Step 2*8: Since the prime objective here is to enable remote development on a server, install the &lsquo;Remote - SSH&rsquo; and &lsquo;Remote Development&rsquo; extensions.</p>
+<p><strong>Step 3</strong>: Set up your ssh credentials to log into RCC<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> with VS Code. Follow the instructions <a href="https://code.visualstudio.com/docs/remote/ssh">here</a>. You just need to complete the &lsquo;Getting Started&rsquo; section. The broad steps are: set up an SSH key-id pair, add your RCC credentials, and connect.</p>
+<p><strong>Step 4</strong>: To connect to RCC host any time after this: Ctrl+Shift+P, &lsquo;Remote-SSH Connect to Host&rsquo;</p>
+<p><strong>Step 5</strong>: Done.</p>
+<p>You can now install the extensions you want on the RCC server side. I installed:</p>
+<ul>
+<li>Python suite: Pylance, Python, Jupyter</li>
+<li>Git tools: Git History, GitLens</li>
+<li>Code formatters: Prettier</li>
+<li>Remote dev: Remote - Containers, Remote - WSL (if on windows), Remote X11</li>
+<li>DB extensions: SQLTools</li>
+</ul>
+<p><em>Next: Getting it to run R via the notebook on the cluster.</em></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Spoiler: They were SSH-related issues, not VS Code ones. I managed to get my IP blacklisted, somehow. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>RCC instructions to connect via SSH: <a href="https://rcc.uchicago.edu/docs/connecting/index.html#connecting-with-ssh">https://rcc.uchicago.edu/docs/connecting/index.html#connecting-with-ssh</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/grad-school">grad-school</a></li>
+								
+								<li><a href="/tags/thesis-logs">thesis-logs</a></li>
+								
+								<li><a href="/tags/setup">setup</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'adarshmathew';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+
+</html>
