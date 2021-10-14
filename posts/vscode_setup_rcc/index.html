@@ -121,6 +121,19 @@
 <h2 id="running-notebooks-without-the-hassle-of-a-vpn">Running Notebooks without the hassle of a VPN</h2>
 <p>Figuring this out was the thing that made me a full VSCode convert. It&rsquo;s pretty nifty, even if the downside is you don&rsquo;t get checkpoint files.</p>
 <p>For this section, I&rsquo;m assuming you&rsquo;ve been able to log into RCC using the steps above.</p>
+<p><em>Update: While helping Nak Won set this up, we discovered this is broken. Because Midway or VSCode doesn&rsquo;t preserve the terminal in Step 4, which is a pain. So now I add a Step 0.</em></p>
+<p><strong>Step 0</strong>: Create a tmux session.</p>
+<p>If you&rsquo;re on Midway2, you need to load the tmux module.</p>
+<div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load tmux
+$ tmux -t myrccsession</code></pre></td></tr></table>
+</div>
+</div>
 <p><strong>Step 1</strong>: Requisition a compute node.</p>
 <div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -159,6 +172,17 @@
 </div>
 <p><strong>Step 5</strong>: Either open an existing notebook in VS Code using the navigation bar on the side, or create a blank notebook.</p>
 <p><strong>Step 6</strong>: At the top right corner, click on &lsquo;Jupyter Server&rsquo;. You should get a drop down asking if you want the default kernel or an existing one. Select existing, and  paste the address of the Jupyter kernel from the previous step. You&rsquo;ll get a prompt to reload, which should be painless.</p>
+<p>To retrieve the terminal where you initialized the notebook, attach the tmux session from before.</p>
+<div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load tmux
+$ tmux a -t myrccsession</code></pre></td></tr></table>
+</div>
+</div>
 <p><strong>Step 7</strong>: Done.</p>
 <hr>
 <p><em>Next: Getting it to run R via the notebook on the cluster.</em></p>
