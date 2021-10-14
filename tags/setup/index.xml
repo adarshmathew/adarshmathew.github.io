@@ -6,7 +6,16 @@
     <description>Recent content in setup on Learning from Error</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Apr 2021 16:51:57 -0400</lastBuildDate><atom:link href="https://adarshmathew.github.io/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Oct 2021 23:32:34 -0400</lastBuildDate><atom:link href="https://adarshmathew.github.io/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Docker to Singularity and Back Again</title>
+      <link>https://adarshmathew.github.io/posts/docker-singularity-compose/</link>
+      <pubDate>Wed, 13 Oct 2021 23:32:34 -0400</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/docker-singularity-compose/</guid>
+      <description>Okay, I&amp;rsquo;ll admit it: As a practicing data scientist/junkie, I picked up Docker only after spending days trying to install the unholy combination of nvidia-cudatoolkit packages for PyTorch on my laptop with a measly GPU.</description>
+    </item>
+    
     <item>
       <title>A Guide for VSCode &amp; RCC Harmony</title>
       <link>https://adarshmathew.github.io/posts/vscode_setup_rcc/</link>

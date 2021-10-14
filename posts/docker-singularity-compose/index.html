@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>From Docker to Singularity and Back Again - Learning from Error</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="From Docker to Singularity and Back Again" />
+<meta property="og:description" content="Containing the Cthulhu of Containerization with and without Docker" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adarshmathew.github.io/posts/docker-singularity-compose/" />
+<meta property="article:published_time" content="2021-10-13T23:32:34-04:00" />
+<meta property="article:modified_time" content="2021-10-13T23:32:34-04:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="From Docker to Singularity and Back Again"/>
+<meta name="twitter:description" content="Containing the Cthulhu of Containerization with and without Docker"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://adarshmathew.github.io/js/main.js"></script>
+	<script src="https://adarshmathew.github.io/js/abc.js"></script>
+	<script src="https://adarshmathew.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://adarshmathew.github.io/">
+	<h1 class="site-title"><a href="https://adarshmathew.github.io/">Learning from Error</a></h1>
+	<div class="site-description"><h2>An old-school blog by <a href="/about">Adarsh Mathew</a></h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/adarshmathew" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/adarshmathew92" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/adarsh-mathew" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/current">Now Reading</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About Me</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">From Docker to Singularity and Back Again</h1>
+			
+			
+			<div class="meta">Last Modified at &mdash; Oct 13, 2021</div>
+		</div>
+
+		<div class="markdown">
+			<p>Okay, I&rsquo;ll admit it: As a practicing data scientist/junkie, I picked up Docker only after spending days trying to install the unholy combination of nvidia-cudatoolkit packages for PyTorch on my laptop with a measly GPU.</p>
+<p>It took me a while to understand what Docker does, but I think I&rsquo;d best describe it now as: Docker spins up an image or virtual container within your system, with the environment and system packages pre-specified. So I don&rsquo;t have to worry about and resolve package conflicts on my machine, especially with the kind of random bloat that accumulates in my apt and .deb lists<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Instead, I have this neat little mini-server on my machine that I can log into, run code on, and do analysis in. This is the great blessing of containerizaton vis-a-vis Docker &ndash; you abstract away messy indivdual installation problems and create a clean, pre-specified environment that is the same across all users. And you know exactly what&rsquo;s in it, because the build command specifies it all.</p>
+<p>With my forays into hobbyist self-hosting &ndash; an effort to re-purpose my old hunk of a laptop and the disparate HDDs &ndash; I use docker extensively now. But I use docker-compose instead of vanilla Docker, and for several reasons: I like the .yml declaration style, I don&rsquo;t have to write multi-line CLI comands, and it works extremely well with VSCode&rsquo;s Docker and Remote-Containers extensions<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p>Coming back to my ongoing adventures with UChicago&rsquo;s HPC cluster, I ran into the same GPU-cuda installation issue<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> above. But docker-compose couldn&rsquo;t be the ready answer, since the cluster doesn&rsquo;t have any native support for it. What they do have is <a href="https://sylabs.io/singularity/">Singularity</a>.</p>
+<p>Singularity is pretty similar to Docker, to my non-sysadmin eyes at least. It claims to be beter suited for HPCs, and also allows you to use docker images from Dockerhub. You know me, I&rsquo;m all about interoperability.</p>
+<p>That said, I couldn&rsquo;t easily find any translation tips from docker to singularity. You can pattern-match your way around it one way or another &ndash; it&rsquo;s what I did about a year-and-a-half(!?) ago when I wanted to use Tiago Peixoto&rsquo;s remarkably fast <a href="https://git.skewed.de/count0/graph-tool">graph-tool</a> package to build interaction graphs and compute their properties[Don&rsquo;t worry, they have a conda install now].</p>
+<p>That said, I was determined to use docker-compose for my problem. Luckily, there exists <a href="https://singularityhub.github.io/singularity-compose/">singularity-compose</a>. It took me about an hour to figure out the idiosyncracies of singularity-compose, and I was up and running. Or I thought so. All this work ended with me getting the ominous error:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ERROR <span style="color:#719e07">[</span><span style="color:#2aa198">&#39;*my_uid* is not in the sudoers file.  This incident will be reported.\n&#39;</span><span style="color:#719e07">]</span> : <span style="color:#719e07">return</span> code <span style="color:#2aa198">1</span> 
+</code></pre></div><p>Well, I tried to get ahead of this by sending out a long request ticket to the good folks at RCC. Let&rsquo;s see how that pans out.</p>
+<p>Until then, here&rsquo;s to keeping our package managers clean, and striving for the difficult combination of tool standardization, competition and interoperabilty.</p>
+<hr>
+<p>My singularity-compose.yml file, in case some poor soul on the UChicgo network is looking for it. All standard warnings of &lsquo;This is completely untested and volunteered&rsquo; apply.</p>
+<div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 0
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#268bd2">version</span>: <span style="color:#2aa198">&#34;1.0&#34;</span>
+<span style="color:#268bd2">instances</span>:
+  <span style="color:#268bd2">rapids-2110</span>:
+    <span style="color:#586e75"># image: docker://rapidsai/rapidsai:21.10-cuda11.2-runtime-ubuntu20.04-py3.8</span>
+    <span style="color:#268bd2">build</span>:
+      <span style="color:#268bd2">context</span>: ~/singularity.config/rapidsai
+      <span style="color:#268bd2">recipe</span>: rapids-2110.sif
+      <span style="color:#268bd2">options</span>:
+       - fakeroot
+    <span style="color:#268bd2">ports</span>:
+      - <span style="color:#2aa198">8888</span>:<span style="color:#2aa198">8888</span>
+      - <span style="color:#2aa198">8787</span>:<span style="color:#2aa198">8787</span>
+      - <span style="color:#2aa198">8786</span>:<span style="color:#2aa198">8786</span>
+    <span style="color:#268bd2">volumes</span>:
+      - ~:~
+      - $SCRATCH/ideolect:$SCRATCH/ideolect         <span style="color:#586e75"># So the hardlinked paths in my notebooks don&#39;t break </span>
+      - ~/singularity.config/rapidsai/config:/config
+</code></pre></td></tr></table>
+</div>
+</div><section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>This forces me to reset my linux install every year or so. But I don&rsquo;t see that as a bad thing, I think of it as spring cleaning. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I think I might be overly attached to my IDE setup. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>If I ever figure out how to resolve this, I&rsquo;ll update this post. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/grad-school">grad-school</a></li>
+								
+								<li><a href="/tags/tinker-logs">tinker-logs</a></li>
+								
+								<li><a href="/tags/setup">setup</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'adarshmathew';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+
+</html>

@@ -13,7 +13,7 @@
       <pubDate>Sat, 06 Mar 2021 17:59:09 -0500</pubDate>
       
       <guid>https://adarshmathew.github.io/posts/umap_reddit/</guid>
-      <description>I was tinkering around with UMAP and the adjacency matrix of user overlap between subreddits because I wanted a nice visualization.</description>
+      <description>While working with the Reddit data dumps for Ideolect, Jeremiah and I have often used the metaphor of the Reddit Universe: groups of subreddits form their own solar systems, with some long-range connections between others.</description>
     </item>
     
   </channel>
