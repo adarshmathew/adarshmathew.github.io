@@ -25,14 +25,5 @@
       <description>I&amp;rsquo;m writing this as I wait to be assigned to an RCC compute node for my thesis work. It took me the better part of a day, but I think I know how to solve my large-scale entropy calculation conundrum.</description>
     </item>
     
-    <item>
-      <title>Visualizing Reddit circa 2017</title>
-      <link>https://adarshmathew.github.io/posts/umap_reddit/</link>
-      <pubDate>Sat, 06 Mar 2021 17:59:09 -0500</pubDate>
-      
-      <guid>https://adarshmathew.github.io/posts/umap_reddit/</guid>
-      <description>While working with the Reddit data dumps for Ideolect, Jeremiah and I have often used the metaphor of the Reddit Universe: groups of subreddits form their own solar systems, with some long-range connections between others.</description>
-    </item>
-    
   </channel>
 </rss>

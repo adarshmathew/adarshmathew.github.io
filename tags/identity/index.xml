@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>identity on Learning from Error</title>
+    <link>https://adarshmathew.github.io/tags/identity/</link>
+    <description>Recent content in identity on Learning from Error</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Jun 2021 14:03:34 -0400</lastBuildDate><atom:link href="https://adarshmathew.github.io/tags/identity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defining a User&#39;s Home Community</title>
+      <link>https://adarshmathew.github.io/posts/defining-home/</link>
+      <pubDate>Sat, 19 Jun 2021 14:03:34 -0400</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/defining-home/</guid>
+      <description>The notion of a &amp;lsquo;home&amp;rsquo; community seems pretty unique to Reddit, since it has self-contained subreddits. Sure, you can triangulate as user&amp;rsquo;s home on FB and Twitter, but you wouldn&amp;rsquo;t be able to anchor it to anything singular1, which is key to the idea of &amp;lsquo;home&amp;rsquo;.</description>
+    </item>
+    
+  </channel>
+</rss>
