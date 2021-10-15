@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Influence, Inequality, &amp; Monocultures on the Internet - Learning from Error</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Influence, Inequality, &amp; Monocultures on the Internet" />
+<meta property="og:description" content="Are some subreddits more lopsided than others?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adarshmathew.github.io/posts/influence-inequality-monocultures/" />
+<meta property="article:published_time" content="2021-10-14T22:07:50-04:00" />
+<meta property="article:modified_time" content="2021-10-14T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Influence, Inequality, &amp; Monocultures on the Internet"/>
+<meta name="twitter:description" content="Are some subreddits more lopsided than others?"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://adarshmathew.github.io/js/main.js"></script>
+	<script src="https://adarshmathew.github.io/js/abc.js"></script>
+	<script src="https://adarshmathew.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://adarshmathew.github.io/">
+	<h1 class="site-title"><a href="https://adarshmathew.github.io/">Learning from Error</a></h1>
+	<div class="site-description"><h2>An old-school blog by <a href="/about">Adarsh Mathew</a></h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/adarshmathew" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/adarshmathew92" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/adarsh-mathew" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/current">Now Reading</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About Me</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Influence, Inequality, &amp; Monocultures on the Internet</h1>
+			
+			
+			<div class="meta">Last Modified at &mdash; Oct 14, 2021</div>
+		</div>
+
+		<div class="markdown">
+			<p><em>This isn&rsquo;t a particularly cogent post. I intend to come back to this as I work through the ideas.</em></p>
+<p>One question from the great participants at INDE-21 has stayed with me, months after the conference: Given what you&rsquo;ve shown and argued about elite users, is there something about them or the associations that they form that would help us intervene and alter the dynamics of that subreddit? If yes, what are the ethics of intervening in a community?</p>
+<p>My answer then was that the majority of subreddits I looked at exhibit a single large connected component of power users. But there were some that formed into neat cliques, almost opposing or counteracting one another. It was vague while pointing to the idea of multi-polar communities. But it got me thinking, and I&rsquo;ve been sitting on it for a while. It led me to asking the question &ldquo;Are some subreddits more lopsided in power than others?&rdquo;</p>
+<p>The reason for this framing comes from some analysis I did with the gini coefficients of users' HITS centrality: it&rsquo;s worse than comment or reply count. It got me thinking of egalitarian vs elitist communities. But I also realized that I made an implicit connection between egalitarian structures and multi-polar communities. I haven&rsquo;t actually validated that.</p>
+<p>So how would I measure structure type on a scale of egalitarian/decentralized to elitist/centralized? Modularity was the first idea that struck me. If the network of power users is one large clique, its modularity score would be low. If it can be cleaved into neat clusters, that score would be high. Of course, I&rsquo;d need an apriori cluster assignment, but I&rsquo;d solve that either using Spectral Clustering or the generative and rigorous Hierarchical Stochastic Block Models from graph-tool.</p>
+<p>My hunch is that in subreddits with high modularity scores for power user networks, i.e. more centers of power, we would see them only having a muted effect on the rest. Because they&rsquo;d be competing for influence.</p>
+<p>But going back to structures of influence, another question buzzing around was the differential influence of being linked to 1 vs 2 power users in a triad.</p>
+<p>The micro-level story of influence is something I need to work on.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'adarshmathew';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+
+</html>
