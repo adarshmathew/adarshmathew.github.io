@@ -7,9 +7,10 @@
 	<meta property="og:title" content="A Guide for VSCode &amp; RCC Harmony" />
 <meta property="og:description" content="Or: How I Learned to Stop Worrying about VPNs and Love SLURM." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://adarshmathew.github.io/posts/vscode_setup_rcc/" />
+<meta property="og:url" content="https://adarshmathew.github.io/posts/vscode_setup_rcc/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-04-08T16:51:57-04:00" />
 <meta property="article:modified_time" content="2021-04-08T16:51:57-04:00" />
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A Guide for VSCode &amp; RCC Harmony"/>
 <meta name="twitter:description" content="Or: How I Learned to Stop Worrying about VPNs and Love SLURM."/>
@@ -126,48 +127,48 @@
 <p>If you&rsquo;re on Midway2, you need to load the tmux module.</p>
 <div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load tmux
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load tmux
 $ tmux -t myrccsession</code></pre></td></tr></table>
 </div>
 </div>
 <p><strong>Step 1</strong>: Requisition a compute node.</p>
 <div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sinteractive -p broadwl --mem<span style="color:#719e07">=</span>16G --time<span style="color:#719e07">=</span>2:00:00</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sinteractive -p broadwl --mem<span style="color:#719e07">=</span>16G --time<span style="color:#719e07">=</span>2:00:00</code></pre></td></tr></table>
 </div>
 </div>
 <p><strong>Step 2</strong>: Load the Anaconda module or your custom env</p>
 <div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load python</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load python</code></pre></td></tr></table>
 </div>
 </div>
 <p><strong>Step 3</strong>: Get your hostname for the compute node. Copy the address.</p>
 <div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hostname -I</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hostname -I</code></pre></td></tr></table>
 </div>
 </div>
 <p><strong>Step 4</strong>: Launch your Jupyter kernel. Use the address from the previous step for your ip address. Copy the address of the Jupyter kernel created.</p>
 <div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ jupyter-notebook --no-browser --ip<span style="color:#719e07">=</span>xxx.xxx.xxx</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ jupyter-notebook --no-browser --ip<span style="color:#719e07">=</span>xxx.xxx.xxx</code></pre></td></tr></table>
 </div>
 </div>
 <p><strong>Step 5</strong>: Either open an existing notebook in VS Code using the navigation bar on the side, or create a blank notebook.</p>
@@ -175,11 +176,11 @@ $ tmux -t myrccsession</code></pre></td></tr></table>
 <p>To retrieve the terminal where you initialized the notebook, attach the tmux session from before.</p>
 <div class="highlight"><div style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load tmux
+<pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ module load tmux
 $ tmux a -t myrccsession</code></pre></td></tr></table>
 </div>
 </div>
@@ -190,10 +191,10 @@ $ tmux a -t myrccsession</code></pre></td></tr></table>
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Spoiler: They were SSH-related issues, not VS Code ones. I managed to get my IP blacklisted, somehow. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Spoiler: They were SSH-related issues, not VS Code ones. I managed to get my IP blacklisted, somehow.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>RCC instructions to connect via SSH: <a href="https://rcc.uchicago.edu/docs/connecting/index.html#connecting-with-ssh">https://rcc.uchicago.edu/docs/connecting/index.html#connecting-with-ssh</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>RCC instructions to connect via SSH: <a href="https://rcc.uchicago.edu/docs/connecting/index.html#connecting-with-ssh">https://rcc.uchicago.edu/docs/connecting/index.html#connecting-with-ssh</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

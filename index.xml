@@ -6,7 +6,25 @@
     <description>Recent content on Learning from Error</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Oct 2021 09:23:44 -0400</lastBuildDate><atom:link href="https://adarshmathew.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Nov 2021 12:53:00 -0500</lastBuildDate><atom:link href="https://adarshmathew.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Selfhosting Logs: Funkwhale</title>
+      <link>https://adarshmathew.github.io/posts/selfhosting-next/</link>
+      <pubDate>Mon, 29 Nov 2021 12:53:00 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/selfhosting-next/</guid>
+      <description>Next on the self-hosting bender  It&amp;rsquo;s been a solid 4 months since I began tinkering with Docker and self-hosting. I think of this as digital hobbyist carpentry, the way you build birdhouses for yourself.</description>
+    </item>
+    
+    <item>
+      <title>Pretrained Comparative Agendas</title>
+      <link>https://adarshmathew.github.io/posts/pretrained-comparative-agendas/</link>
+      <pubDate>Wed, 24 Nov 2021 12:43:18 -0500</pubDate>
+      
+      <guid>https://adarshmathew.github.io/posts/pretrained-comparative-agendas/</guid>
+      <description>tl;dr: Use codebooks, move away from auto-generated unsupervised topics.  This idea is completely due to Benjamin Guinaudeau&amp;rsquo;s great tweet.</description>
+    </item>
+    
     <item>
       <title>What Makes You Cosmopolitan?</title>
       <link>https://adarshmathew.github.io/posts/what-makes-you-cosmopolitan/</link>

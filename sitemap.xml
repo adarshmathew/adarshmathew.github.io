@@ -1,210 +1,134 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://adarshmathew.github.io/tags/analogies/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adarshmathew.github.io/tags/communities/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adarshmathew.github.io/tags/ideolect/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://adarshmathew.github.io/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/</loc>
+    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://adarshmathew.github.io/posts/selfhosting-next/</loc>
+    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://adarshmathew.github.io/posts/pretrained-comparative-agendas/</loc>
+    <lastmod>2021-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://adarshmathew.github.io/tags/analogies/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://adarshmathew.github.io/tags/communities/</loc>
+    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://adarshmathew.github.io/tags/ideolect/</loc>
+    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/what-makes-you-cosmopolitan/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/current/blurb-murder_mystery_games/</loc>
     <lastmod>2021-10-16T19:03:57-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/games/</loc>
     <lastmod>2021-10-16T19:03:57-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/current/</loc>
     <lastmod>2021-10-16T19:03:57-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/recommendations/</loc>
     <lastmod>2021-10-16T19:03:57-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/influence-inequality-monocultures/</loc>
     <lastmod>2021-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/docker-singularity-compose/</loc>
     <lastmod>2021-10-13T23:32:34-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/grad-school/</loc>
     <lastmod>2021-10-13T23:32:34-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/setup/</loc>
     <lastmod>2021-10-13T23:32:34-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/tinker-logs/</loc>
     <lastmod>2021-10-13T23:32:34-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/defining-home/</loc>
     <lastmod>2021-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/identity/</loc>
     <lastmod>2021-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/ideolect-logs/</loc>
     <lastmod>2021-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/vscode_setup_rcc/</loc>
     <lastmod>2021-04-08T16:51:57-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/thesis-logs/</loc>
     <lastmod>2021-04-08T16:51:57-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/experience_and_fundamental_cs/</loc>
     <lastmod>2021-03-24T15:50:38-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/musings/</loc>
     <lastmod>2021-03-24T15:50:38-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/pretty-data/</loc>
     <lastmod>2021-03-06T17:59:09-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/umap_reddit/</loc>
     <lastmod>2021-03-06T17:59:09-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/about/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/current/2021-2feb-14/</loc>
     <lastmod>2021-02-20T14:20:25-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/now-reading/</loc>
     <lastmod>2021-02-20T14:20:25-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/industry/</loc>
     <lastmod>2020-11-25T18:36:44-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/research-gatekeeping-academia/</loc>
     <lastmod>2020-11-25T18:36:44-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/current/2020-11november-15/</loc>
     <lastmod>2020-11-14T11:20:00-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/current/2020-11nov-8/</loc>
     <lastmod>2020-11-08T14:56:40-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/projects/paths-to-power/</loc>
     <lastmod>2021-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/projects/</loc>
     <lastmod>2021-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/pandemic-grad-school/</loc>
     <lastmod>2020-09-23T22:15:20-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/projects/weboftruth/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/projects/ideolect/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/posts/demo-bias-big-tech/</loc>
     <lastmod>2020-01-16T16:07:24-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/tags/half-baked/</loc>
     <lastmod>2020-01-16T16:07:24-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/binned/</loc>
     <lastmod>2019-09-22T01:05:39-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://adarshmathew.github.io/binned/my-first-post/</loc>
     <lastmod>2019-09-22T01:05:39-05:00</lastmod>
   </url>
-  
 </urlset>
