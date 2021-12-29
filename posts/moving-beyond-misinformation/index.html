@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Why Move Beyond Misinformation? - Learning from Error</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Why Move Beyond Misinformation?" />
+<meta property="og:description" content="Don&#39;t design for misinfo &#39;detection&#39;. Build for resilience." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adarshmathew.github.io/posts/moving-beyond-misinformation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-29T16:35:30-05:00" />
+<meta property="article:modified_time" content="2021-12-29T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Why Move Beyond Misinformation?"/>
+<meta name="twitter:description" content="Don&#39;t design for misinfo &#39;detection&#39;. Build for resilience."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://adarshmathew.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://adarshmathew.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://adarshmathew.github.io/js/main.js"></script>
+	<script src="https://adarshmathew.github.io/js/abc.js"></script>
+	<script src="https://adarshmathew.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://adarshmathew.github.io/">
+	<h1 class="site-title"><a href="https://adarshmathew.github.io/">Learning from Error</a></h1>
+	<div class="site-description"><h2>An old-school blog by <a href="/about">Adarsh Mathew</a></h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/adarshmathew" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/adarshmathew92" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/adarsh-mathew" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/current">Now Reading</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/about">About Me</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Why Move Beyond Misinformation?</h1>
+			
+			
+			<div class="meta">Last Modified at &mdash; Dec 29, 2021</div>
+		</div>
+
+		<div class="markdown">
+			<p>In a bit of great news, I&rsquo;ve been invited to present our paper on [&quot;<em>Paths to Power</em>&quot;](/projects/paths-to-power/ at the upcoming workshop <a href="https://c4-lab.github.io/workshop-announcement/">&ldquo;Beyond Misinformation: Towards a Research Agenda for Information Ecosystems, Network Dynamics and Emergent Epistemologies&rdquo;</a> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> hosted by the iSchool at Syracuse University. I&rsquo;m excited to present our framework and early results to the academic audience for several reasons: this is a crowd that senses something is wrong with the polatization/misinformation/fake-news research paradigm, and they have their eye on network epistemology, something that&rsquo;s very nascent.</p>
+<p>While preparing my paper talk for the workshop, I got this really interesting prompt from the organizers:</p>
+<blockquote>
+<p>&ldquo;How you organize your presentation is up to you, but at some point in your presentation please try to highlight for your audience a question or perspective that helps elaborate a future agenda for research beyond misinformation.
+In formulating this, it may be useful for you to consider the following provocation: If you were a program officer for a major research body with a budget of $1T and the goal of changing the information ecosystem to advance the welfare of all people, what kind of research proposals would you invite?&rdquo;</p>
+</blockquote>
+<p>This triggered an internal discussion: How does the Ideolect and Legitimate conflict project fit into this kind of agenda? How does it talk about information ecosystems?</p>
+<p>Jeremiah and I were talking through this. While we want to understand how powerful users influence conversation on the internet, we are also studying how they collaborate and how likely they are to do so; trying to measure &lsquo;open-mindedness&rsquo;, which we believe is an inverse to extremism. The broader question we&rsquo;re tackling is how individuals exchange ideas on these platforms. Identifying conflict, illegitimate (trolling) and legitimate (substantial back and forth).</p>
+<p>We conceptualize these forums as practical epistemic communities, where agents exchange information and signal approval and engage in sense-making. We do two things: a) identify the network structure of interaction in this setup, and b) measure and describe discourse characteristics of the group. We hope to understand the interplay between these two, to identify  how social relationships impact discourse, to understand how communities become epistemically weakened. they could be vulnerable and open to hijack; they could become reinforcing echo chambers; they could become aggressively skpetical, eroding all norms of evidence.</p>
+<p>A lot of this thinking stems from Kevin Zollman&rsquo;s work on how epistemic networks converge on the truth, with the example of academia. Our work tries to examine how such an approach could be translated to empirical networks beyond agent-based models. To identify and predict influence. To understand the drivers of power. To characterize how communities evolve and change, if they do.</p>
+<p>So, our broader question is this: How do we construct &lsquo;virtuous&rsquo; epistemic communities that are resilient to attack/hijack? How do we port these ideas to the design of platforms and groups on the internet, identifying key sets of incentives to discourage &lsquo;deceitful&rsquo; behavior? How do we encode this without impeding their ability to process conflicting, uncertain information in uncertain times?</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Quite a mouthful. But such a sweet combination of ideas.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/ideolect">ideolect</a></li>
+								
+								<li><a href="/tags/platform-episteme">platform episteme</a></li>
+								
+								<li><a href="/tags/misinformation">misinformation</a></li>
+								
+								<li><a href="/tags/incentives">incentives</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'adarshmathew';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+
+</html>
